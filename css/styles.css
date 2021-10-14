@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
+#btn-guardar {
+  background-color: rgb(173, 20, 153);
+  color: white;
+  margin-top: 10px;
+}
+#btn-borrar {
+  background-color: blue;
+  color: white;
+}
+
+body {
+  background: linear-gradient(black, white);
+  font-family: "Poppins", sans-serif;
+}
+
+.white {
+  color: white;
+}
+
+.fas,
+.far {
+  font-size: 33px;
+}
+.fab {
+  font-size: 70px;
+}
+
+.borrar-juego {
+  color: red;
+}

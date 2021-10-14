@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>GestoGames</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="white"> <i class="fab fa-wizards-of-the-coast"></i> Fitxa Joc</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/juego1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/juego2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/juego3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h1 class="white">Registre Joc</h1>
+        <form class="form-group row" action="">
+            <label for=""><i class="fas fa-puzzle-piece"></i> Nom</label><input class="form-control" id="nombre"
+                type="text">
+            <label for=""><i class="far fa-calendar-check"></i> Llançament</label><input type="date"
+                class="form-control" id="lanzamiento" type="text">
+            <label for=""><i class="fas fa-baby-carriage"></i> Pegi</label>
+            <select name="pegi" id="pegi">
+                <option value="todos">Per qualsevol edat</option>
+                <option value="tres">3</option>
+                <option value="siete">7</option>
+                <option value="doce">12</option>
+                <option value="dieciseis">16</option>
+                <option value="dieciocho">18</option>
+            </select>
+            <label for=""><i class="far fa-file-code"></i> Desenvolupador</label><input class="form-control"
+                id="desarrollador" type="text">
+            <label for=""><i class="fas fa-dice"></i> Gènere</label>
+            <select name="genero" id="genero">
+                <option value="accion">Acció</option>
+                <option value="aventura">Aventura</option>
+                <option value="rol">Rol</option>
+            </select>
+            <button type="button" id="btn-guardar">Guardar Dades</button>
+            <button type="reset" id="btn-borrar">Reset</button>
+        </form>
+
+
+        <h1>Llista jocs</h1><i id="pulsar" class="fas fa-sort-alpha-down"></i>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Desenvolupador</th>
+                    <th>llançament</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="juegos">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/appPoo.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

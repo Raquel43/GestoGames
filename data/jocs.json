@@ -1,0 +1,23 @@
+[
+    {
+        "nom": "Star Wars Jedi:Fallen Order",
+        "desenvolupador": "Five start Studio",
+        "genere": "aventures",
+        "pegi": "13",
+        "lanzamiento": "12/12/2019"
+    },
+    {
+        "nom": "Terminator",
+        "desenvolupador": "Marvel Studio",
+        "genere": "aventures",
+        "pegi": "13",
+        "lanzamiento": "12/12/2019"
+    },
+    {
+        "nom": "Halo",
+        "desenvolupador": "Pixel Studio",
+        "genere": "dibuixos",
+        "pegi": "5",
+        "lanzamiento": "12/12/2019"
+    }
+]
